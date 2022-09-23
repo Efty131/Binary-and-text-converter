@@ -11,18 +11,24 @@
     <title>Binaray Converter</title>
 </head>
 <body>
-    <h2 class="text-primary mt-2 text-center">Hello World!</h2> <br><br><br>
+    <h2 class="text-primary mt-2 text-center text-decoration-underline">Bismillah</h2> <br><br><br>
     <div class="container-fluid text-center">
         <div class="row">
-            <div class="col-6 col-md-12">
+            <div class="col-12 col-md-6 border-end border-success">
                 <h2 class="text-danger">Text to Binary Converter</h2>
                 <label>Enter the text here</label> <br>
                 <input type="text" name="" class="input-text"> <br> <br>
-                <h3 class="text-info">Binary is 👇</h3>
+                <button class="btn btn-info"onclick="encode()">Convert</button>
+                <h3 class="text-info mt-2">Binary is 👇</h3>
                 <p id="Output-binary"></p>
             </div>
-            <div class="col-6 col-md-12 bg-success">
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ratione velit eveniet est nisi minus officia unde. Nisi est veniam ipsa eligendi id.</p>
+            <div class="col-12 col-md-6">
+                <h2 class="text-success">Binary to Text Converter</h2>
+                <label>Enter the binary here</label> <br>
+                <input type="text" name="" class="input-binary"> <br> <br>
+                <button class="btn btn-primary"onclick="decode()">Convert</button>
+                <h3 class="text-info mt-2">Binary is 👇</h3>
+                <p id="Output-text"></p>
             </div>
         </div>
     </div>
