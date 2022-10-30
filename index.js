@@ -12,7 +12,8 @@ function encode(){
 // Binary to Text
  const decode = () => {
     const BinaryInput = document.querySelector(".input-binary").value;
-    const res = BinaryInput.split(' ').map(b => parseInt(b,2)).map(num => String.fromCharCode(num)).join('');
+    const res = BinaryInput.split(' ').map(
+      b => parseInt(b,2)).map(num => String.fromCharCode(num)).join('');
     document.getElementById("Output-text").innerText = res;
  };
  // m/s to km/h
@@ -21,4 +22,11 @@ function encode(){
    const outputKmh = document.getElementById("Output-kmh");
    const kmh = ms * 3.6;
    outputKmh.innerHTML = kmh;
- }
+ };
+ // Fahrenheit to Celsius
+const dm = () => {
+   let farn = document.querySelector("#Fahrenheit").value;
+   let celsius = document.querySelector("#Output-celsius");
+      const cl = (farn - 32) * (5 / 9);
+      celsius.innerText = cl;
+};

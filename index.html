@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         
     </style>
-    <title>Binaray Converter</title>
+    <title>Multiple Converters</title>
 </head>
 <body>
     <h2 class="text-primary mt-2 text-center text-decoration-underline">Bismillah</h2> <br><br><br>
@@ -16,7 +17,7 @@
         <div class="row">
             <div class="col-12 col-md-6 border-end border-success">
                 <h2 class="text-danger">Text to Binary Converter</h2>
-                <label>Enter the text here</label> <br>
+                <label>Enter the text here:</label> <br>
                 <input type="text" name="" class="input-text"> <br> <br>
                 <button class="btn btn-info"onclick="encode()">Convert</button>
                 <h3 class="text-info mt-2">Binary is 👇</h3>
@@ -24,24 +25,33 @@
             </div>
             <div class="col-12 col-md-6">
                 <h2 class="text-success">Binary to Text Converter</h2>
-                <label>Enter the binary here</label> <br>
+                <label>Enter the binary here:</label> <br>
                 <input type="text" name="" class="input-binary"> <br> <br>
                 <button class="btn btn-primary"onclick="decode()">Convert</button>
                 <h3 class="text-info mt-2">Binary is 👇</h3>
                 <p id="Output-text"></p>
             </div> 
-            <div class="col-12">
+            <div class="col-12 col-md-6 border-end border-success">
                 <br>
                 <h2 class="text-success">m/s to km/h Converter</h2>
-                <label>Enter the m/s here</label> <br>
+                <label>Enter the m/s here:</label> <br>
                 <input type="text" name="" class="MS"> <br> <br>
                 <button class="btn btn-primary"onclick="km()">Convert</button>
                 <h3 class="text-info mt-2">km/h is 👇</h3>
                 <p id="Output-kmh"></p>
             </div>
+            <div class="col-12 col-md-6">
+                <br>
+                <h2 class="text-danger">Fahrenheit to Celsius Converter</h2>
+                <label>Enter the Fahrenheit here:</label> <br>
+                <input type="text" name="" id="Fahrenheit"> <br> <br>
+                <button class="btn btn-info"onclick="dm()">Convert</button>
+                <h3 class="text-info mt-2">Celsius is 👇</h3>
+                <p id="Output-celsius"></p>
+            </div>
         </div>
     </div>
     <script defer src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
