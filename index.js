@@ -30,3 +30,12 @@ const dm = () => {
       const cl = (farn - 32) * (5 / 9);
       celsius.innerText = cl;
 };
+// Asol nirnoy
+const asol = () => {
+  let r = document.querySelector("#sudherHar").value / 100;
+  let n = document.querySelector("#time").value;
+  let I = document.querySelector("#sudh").value;
+  let g = n*r;
+  let ru = I / g;
+  document.getElementById("Asol").innerHTML = ru.toFixed(2);
+};
